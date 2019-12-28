@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run build-css && npm run build-js",
     "build-js": "tsc",
-    "build-css": "node-sass src/sass/main.scss public/css/style.css",
+    "build-css": "node-sass --watch src/sass/main.scss public/css/style.css",
     "clean": "rm public/css/style.css public/js/main.js"
   },
   "repository": {
