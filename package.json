@@ -4,7 +4,7 @@
   "description": "Auto generate typography for your website or web app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc src/app/index.ts --out public/main.js"
   },
   "repository": {
     "type": "git",
