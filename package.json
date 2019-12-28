@@ -4,7 +4,10 @@
   "description": "Auto generate typography for your website or web app",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc -w src/app/index.ts --out public/js/main.js"
+    "build": "npm run build-js && npm run build-scss",
+    "clean": "rm public/css/style.css public/js/main.js",
+    "build-js": "npx tsc -w src/app/index.ts --out public/js/main.js",
+    "build-scss": "npx node-sass src/sass/main.scss public/css/style.css"
   },
   "repository": {
     "type": "git",
