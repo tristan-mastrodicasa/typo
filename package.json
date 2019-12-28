@@ -4,7 +4,7 @@
   "description": "Auto generate typography for your website or web app",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc -w src/app/index.ts --out public/js/main.js"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,9 @@
   "homepage": "https://github.com/tristan-mastrodicasa/typo#readme",
   "devDependencies": {
     "node-sass": "^4.13.0",
+    "tslint": "^5.20.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "tslint-microsoft-contrib": "^6.2.0",
     "typescript": "^3.7.4"
   }
 }
